@@ -34,4 +34,9 @@ public class FibonacciShould {
   void give_a_one_value_for_the_fourth_position() {
     assertThat(fibonacci.at(3), is(2));
   }
+
+  @Test
+  void give_a_one_value_for_the_fifth_position() {
+    assertThat(fibonacci.at(4), is(3));
+  }
 }
