@@ -31,12 +31,13 @@ public class FibonacciShould {
   }
 
   @Test
-  void give_a_one_value_for_the_fourth_position() {
+  void give_a_value_of_two_for_the_fourth_position() {
     assertThat(fibonacci.at(3), is(2));
   }
 
   @Test
-  void give_a_one_value_for_the_fifth_position() {
+  void give_a_value_of_three_for_the_fifth_position() {
     assertThat(fibonacci.at(4), is(3));
   }
+
 }
