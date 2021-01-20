@@ -12,4 +12,12 @@ public class FibonacciShould {
     Fibonacci fibonacci = new Fibonacci();
     assertThat(fibonacci.at(0), is(0));
   }
+
+  @Test
+  void give_a_one_value_for_the_second_position() {
+    Fibonacci fibonacci = new Fibonacci();
+    assertThat(fibonacci.at(1), is(1));
+  }
+
+
 }
