@@ -19,5 +19,9 @@ public class FibonacciShould {
     assertThat(fibonacci.at(1), is(1));
   }
 
-
+  @Test
+  void give_a_one_value_for_the_third_position() {
+    Fibonacci fibonacci = new Fibonacci();
+    assertThat(fibonacci.at(2), is(1));
+  }
 }
