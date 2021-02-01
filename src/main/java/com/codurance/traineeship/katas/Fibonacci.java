@@ -3,15 +3,18 @@ package com.codurance.traineeship.katas;
 public class Fibonacci {
 
     public int at(int position) {
-        if (position == 0) {
-            return 0;
+        int firstPreceding = 0;
+        int secondPreceding = 1;
+        int fibonacciResult = 0;
+
+        for (int positionIndex = 0; positionIndex < position; positionIndex++) {
+            if (positionIndex == 1) {
+                continue;
+            }
+            fibonacciResult = firstPreceding + secondPreceding;
+            firstPreceding = secondPreceding;
+            secondPreceding = fibonacciResult;
         }
-        if (position == 3) {
-            return 2;
-        }
-        if (position == 4) {
-            return 3;
-        }
-        return 1;
+        return fibonacciResult;
     }
 }
